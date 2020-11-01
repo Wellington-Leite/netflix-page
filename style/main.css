@@ -1,0 +1,23 @@
+/* Variáveis dentro do CSS - Boa pratica quando utilizado a mesma cor em vários lugares*/
+:root {
+  --vermelho: #e50914;
+  --Preto: #141414;
+}
+
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  /*garantir que os elementos tenham exatamente o tamanho que foi definido e não saiam da caixa*/
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--Preto);
+  font-family: "Times New Roman", Times, serif;
+  color: var(--vermelho);
+}
+
+header .container {
+  border: 1px solid black;
+}
