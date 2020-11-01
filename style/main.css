@@ -15,7 +15,7 @@
 /********* Elementos base ************/
 body {
   background: var(--Preto);
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Arial", Times, serif;
   color: #fff;
 }
 
@@ -48,6 +48,7 @@ header nav a:hover {
 
 /******** Filme Principal *********/
 main .main-movie {
+  margin-top: 5px;
   margin-left: 3px;
   font-size: 16px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -115,4 +116,8 @@ main .main-movie {
 
 .item {
   cursor: pointer;
+}
+
+.carousel-movie {
+  margin-top: 5px;
 }
