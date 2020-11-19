@@ -1,7 +1,7 @@
 function loadImg(qtd) {
   let elementHtml = `<div class="owl-carousel owl-theme">`;
   var i = 1;
-  while (i < qtd) {
+  while (i <= qtd) {
     elementHtml += `
   <div class="item">
     <a href="#">
