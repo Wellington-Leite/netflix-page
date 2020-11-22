@@ -14,14 +14,15 @@
     <title>Netflix Clone</title>
   </head>
   <body>
-    <header>
-      <div class="container">
+    <header id="header">
+      <div class="container navbar">
         <h2 class="logo">NETFLIX</h2>
         <nav>
-          <a href="#">Início</a>
-          <a href="#">Séries</a>
-          <a href="#">Filmes</a>
-          <a href="#">Documentários</a>
+          <a href="#header">Início</a>
+          <a href="#list1">Ação</a>
+          <a href="#list2">Aventura</a>
+          <a href="#list3">Comédia</a>
+          <a href="#list4">Documentários</a>
         </nav>
       </div>
     </header>
@@ -30,13 +31,11 @@
       <div class="main-movie">
         <!-- container é uma classe wrapper -->
         <div class="container">
-          <h3 class="title">VELOZES E FURIOSOS 8</h3>
+          <h3 class="title">VELOZES E FURIOSOS 9</h3>
           <p class="description">
-            Depois que Brian e Mia se aposentaram, e o resto da equipe foi
-            exonerado, Dom e Letty estão em lua de mel e levam uma vida pacata e
-            completamente normal. Mas a adrenalina do passado volta com tudo
-            quando uma mulher misteriosa faz com que Dom retorne ao mundo do
-            crime e da velocidade.
+            Dominic Toretto e sua família precisam enfrentar o seu irmão mais
+            novo Jakob, um assassino mortal que está trabalhando com uma antiga
+            inimiga, a cyber-terrorista Cipher.
           </p>
           <!-- div buttons não é filha direta da filme-pricipal por isso não herda o display flex, 
             quando criada é por padrão display block -->
@@ -52,10 +51,36 @@
       </div>
     </main>
 
-    <!-- Carousel owl -->
-    <div class="carousel-movie">
-      <!-- Conteudo dinâmico de filmes -->
-      <a href="#"></a>
+    <div class="container carousel">
+      <section>
+        <h3>Ação</h3>
+        <!-- Carousel owl -->
+        <div class="carousel-movie" id="list1">
+          <!-- Conteudo dinâmico de filmes -->
+          <a href="#"></a>
+        </div>
+      </section>
+
+      <section>
+        <h3>Aventura</h3>
+        <div class="carousel-movie" id="list2">
+          <a href="#"></a>
+        </div>
+      </section>
+
+      <section>
+        <h3>Comédia</h3>
+        <section class="carousel-movie" id="list3">
+          <a href="#"></a>
+        </section>
+      </section>
+
+      <section>
+        <h3>Documentários</h3>
+        <div class="carousel-movie" id="list4">
+          <a href="#"></a>
+        </div>
+      </section>
     </div>
 
     <script
@@ -66,5 +91,8 @@
     <script src="./js/ow/jquery.min.js"></script>
     <script src="./js/ow/owl.carousel.min.js"></script>
     <script src="./js/setup.js"></script>
+
+    <!-- Scroll Suave -->
+    <script src="./js/scroll-suave.js"></script>
   </body>
 </html>

@@ -1,11 +1,11 @@
-function loadImg(qtd) {
+function loadImg(qtd, local) {
   let elementHtml = `<div class="owl-carousel owl-theme">`;
   var i = 1;
   while (i <= qtd) {
     elementHtml += `
-  <div class="item">
+  <div class="item zoom">
     <a href="#">
-      <img class="box-movie" src="img/mini${i}.jpg" alt="" />
+      <img class="box-movie" src="img/${local}/mini${i}.jpg" alt="" />
     </a>
   </div>`;
     i++;
@@ -13,12 +13,13 @@ function loadImg(qtd) {
   return elementHtml + `</div>`;
 }
 
-$(".carousel-movie").html(loadImg(10));
-// console.log(upImg());
+$("#list1").html(loadImg(8, "acao"));
+$("#list2").html(loadImg(8, "aventura"));
+$("#list3").html(loadImg(8, "comedia"));
+$("#list4").html(loadImg(8, "documentarios"));
 
 $(".owl-carousel").owlCarousel({
   loop: true,
-  margin: 15,
   nav: false,
   responsive: {
     0: {

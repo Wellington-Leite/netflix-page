@@ -8,8 +8,7 @@
 * {
   padding: 0;
   margin: 0;
-  /*garantir que os elementos tenham exatamente o tamanho que foi definido e não saiam da caixa*/
-  box-sizing: border-box;
+  box-sizing: border-box; /*garantir que os elementos tenham exatamente o tamanho que foi definido e não saiam da caixa*/
 }
 
 /********* Elementos base ************/
@@ -20,13 +19,20 @@ body {
 }
 
 header .container {
-  /* Flex box tende a jogar tudo pra linha */
-  display: flex;
-  flex-direction: row;
-  /* Alinhar elementos ao centro */
-  align-items: center;
-  /* Espaçamento space-between entre os elementos */
+  display: flex; /* Flex box tende a jogar tudo pra linha */
+  flex-direction: row; /* Alinhar elementos ao centro */
+  align-items: center; /* Espaçamento space-between entre os elementos */
   justify-content: space-between;
+}
+
+header .navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  font-size: larger;
+  z-index: 2;
 }
 
 header .logo {
@@ -48,24 +54,25 @@ header nav a:hover {
 
 /******** Filme Principal *********/
 main .main-movie {
-  margin-top: 5px;
-  margin-left: 3px;
+  margin: 5px 5px 30px 5px;
   font-size: 16px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
     url("../img/fast-furios.jpg");
-  height: 400px;
-  /* Especificar o tamanho da imagem do background */
-  background-size: cover;
+  height: 500px;
+  background-size: cover; /* Especificar o tamanho da imagem do background */
   display: flex;
   flex-direction: column;
-  /* O justfy content sempre segue a direção do flex direction */
-  justify-content: center;
+  justify-content: center; /* O justify content sempre segue a direção do flex direction */
   align-items: flex-start;
 }
 
 .container {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.container h3 {
+  margin-left: 10px;
 }
 
 .main-movie .container {
@@ -120,4 +127,22 @@ main .main-movie {
 
 .carousel-movie {
   margin-top: 5px;
+}
+
+/* Efeito Zoom na lista de filmes */
+.zoom {
+  margin: 10px 10px 10px 5px;
+}
+
+.zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoom:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
