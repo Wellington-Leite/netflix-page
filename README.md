@@ -1,7 +1,7 @@
 # Recriando a Interface do Netflix - DIO - Bootcamp Everis
 
 Aplicando conceitos e técnicas de CSS3 com containers e variáveis, como posicionar os elementos com Flexbox e como utilizar plugins Jquery a favor da aplicação.
-Aproveitei e implementei uma função para fazer o carregamento das miniaturas dos filmes.
+Aproveitei e implementei uma função para fazer o carregamento das miniaturas dos filmes, adicionei o efeito zoom ao passar o mouse sobre as miniaturas e também a navegação com scrollTo.
 
 ### Tecnologias utilizadas:
 
